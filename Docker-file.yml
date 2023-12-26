@@ -12,5 +12,8 @@ COPY Tests /app/Tests
 # Устанавливаем рабочую директорию
 WORKDIR /app
 
+# Запускаем сервер Golang
+CMD ["go run", "Server/app.go"]
+
 # Запускаем тесты с помощью pytest
 CMD ["pytest", "Tests/test_api.py"]

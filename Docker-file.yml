@@ -1,0 +1,16 @@
+# Используем базовый образ Python
+FROM python:3.9
+
+# Устанавливаем необходимые зависимости
+RUN pip install --upgrade pip
+RUN pip install pytest requests allure-pytest
+
+# Копируем приложение и тесты в контейнер
+COPY Server /app/Server
+COPY Tests /app/Tests
+
+# Устанавливаем рабочую директорию
+WORKDIR /app
+
+# Запускаем тесты с помощью pytest
+CMD ["pytest", "Tests/test_api.py"]

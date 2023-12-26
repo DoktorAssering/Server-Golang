@@ -1,13 +1,20 @@
 # ServerGolang
 
 Ссылка на проект - https://github.com/DoktorAssering/ServerGolang
+
 Всего тестов - 20 тестов
+
 Тестовое покрытие - 100%
 
+
 Golang Server - app.go (/Server/app.go)
+
 JSON DB | Server - db.json (/DataBase/db.json)
+
 Tests All - test_api.py (/Tests/test_api.py)
+
 Docker - Docker-file.yml (/Docker-file.yml)
+
 
 ![image](https://github.com/DoktorAssering/ServerGolang/blob/master/Assets/Screen_1.jpg)
 
